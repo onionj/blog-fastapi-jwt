@@ -8,8 +8,16 @@ class PostBase(BaseModel):
 
 
 class PostOut(PostBase):
-    id: int
+    id: int = Field(..., example=1)
 
 
 class PostIn(PostBase):
     pass
+
+
+class UserBase(BaseModel):
+    email: EmailStr = Field(..., example="example@gmail.com")
+
+
+class UserIn(UserBase):
+    password: str = Field(..., min_length=8)
