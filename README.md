@@ -1,2 +1,5 @@
 # blog-fastapi-jwt
-api created by FastAPI and authentication using JSON Web Tokens (JWTs)
+
+secured mini-blog CRUD app for creating and reading blog posts
+
+authentication using JSON Web Tokens (JWTs)
